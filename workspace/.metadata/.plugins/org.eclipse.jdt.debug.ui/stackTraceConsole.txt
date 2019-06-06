@@ -1,0 +1,13 @@
+    <persistence-unit name="default">
+    	<provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
+    	<non-jta-data-source>java://comp/env/jdbc/MySchoolDS</non-jta-data-source>
+    	<class>org.openxava.session.GalleryImage</class>
+        <properties>
+            <property name="hibernate.dialect" value="org.hibernate.dialect.MySQLInnoDBDialect"/>
+            <property name="hibernate.connection.release_mode" value="after_transaction"/>
+            <property name="hibernate.show_sql" value="true"/>
+            <property name="hibernate.format_sql" value="true"/>
+            <property name="hibernate.hbm2ddl.auto" value="update"/>
+        </properties>
+    </persistence-unit>    
+        
